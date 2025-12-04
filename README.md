@@ -2,33 +2,77 @@
 
 A comprehensive web-based computer vision application implementing fundamental algorithms for object measurement, template matching, image processing, feature extraction, motion tracking, stereo vision, and pose estimation.
 
-## Project Structure
+---
 
-```
-computer-vision/
-├── app.py                    # Main Flask application
-├── wsgi.py                   # WSGI entry point for production
-├── requirements.txt          # Python dependencies
-├── core/                     # Shared utilities
-│   ├── auth.py              # Face authentication
-│   ├── decorators.py        # Route decorators
-│   └── utils.py             # Image processing utilities
-├── modules/                  # Feature modules
-│   ├── module1/             # Object dimension measurement
-│   ├── module2/             # Template matching & Fourier transform
-│   ├── module3/             # Edge/corner detection & segmentation
-│   ├── module4/             # Image stitching & SIFT
-│   ├── module5_6/           # Motion tracking
-│   └── module7/             # Stereo vision & pose estimation
-├── static/                   # Static assets
-│   ├── js/                  # Client-side JavaScript
-│   └── outputs/             # Generated output images
-├── templates/               # HTML templates
-├── models/                  # Pre-trained models (face detection)
-└── uploads/                 # Temporary upload storage
-```
+## 🔗 Quick Links - All Resources
 
-## Modules Overview
+### Live Demo
+**🌐 Publicly Accessible Website:** [https://web-production-eff5.up.railway.app](https://web-production-eff5.up.railway.app)
+
+### All Resources at a Glance
+
+| Resource | Link |
+|----------|------|
+| **🌐 Live Website** | https://web-production-eff5.up.railway.app |
+| **📁 All Video Demos (Root Folder)** | https://drive.google.com/drive/folders/1sDuxKY6cSGA5d_JrrPNI5vKIN9wEUTt5?usp=drive_link |
+| **📂 GitHub Repository** | https://github.com/Gowtham0436/ComputerVision_Gowtham |
+
+---
+
+## 🎥 Video Demonstrations
+
+All video demonstrations are organized by module in Google Drive:
+
+| Module | Description | Video Demo Link |
+|--------|-------------|-----------------|
+| **Module 1** | Object Dimension Measurement | https://drive.google.com/drive/folders/12DCsXSPZt4a09L4Dp8GqmWm7n2oCG9VD?usp=sharing |
+| **Module 2** | Template Matching & Fourier Transform | https://drive.google.com/drive/folders/1iy3I0BbV6KJRbN1B4AM7Tou4ehtyGQgp?usp=drive_link |
+| **Module 3** | Edge/Corner Detection & Segmentation | https://drive.google.com/drive/folders/1UHn1uRgJSzDtCxkuvjkzxLLVsO_vYNva?usp=drive_link |
+| **Module 4** | Image Stitching & SIFT | https://drive.google.com/drive/folders/1m13iJuZwABcr-KuIilbYmSInasvWnB1p?usp=drive_link |
+| **Module 5-6** | Motion & Object Tracking | https://drive.google.com/drive/folders/1drMoXxM1l_9q-G7sPEzHokzbKq7n-Tz1?usp=drive_link |
+| **Module 7** | Stereo Vision & Pose Estimation | https://drive.google.com/drive/folders/1lKJa6wYDAKPlGJPm28aNTb3BJQXZJwtm?usp=drive_link |
+
+---
+
+## 📝 Derivation Documents
+
+Theoretical derivations and mathematical proofs (handwritten/typed documents):
+
+| Module | Problem | Derivation Document Link |
+|--------|---------|--------------------------|
+| **Module 1** | Perspective Projection Equations | https://docs.google.com/document/d/1LCS-pMZc43crUcNrvYt7jO-VWAmUCUcfcD0CZ9NHdmw/edit?usp=sharing |
+| **Module 5-6** | Lucas-Kanade Optical Flow & Affine Motion Model | https://docs.google.com/document/d/1LACvjROUFot_AqIzYj0mHj1TEeKIFW4FRhDNz9A23qw/edit?usp=sharing |
+| **Module 7** | Uncalibrated Stereo Reconstruction | https://docs.google.com/document/d/1xmeF3Ek7uIAratsi-S8-WAou9DPjP43YmSKWZ22JOH4/edit?usp=sharing |
+
+---
+
+## ⚠️ Important Notice: Hosted Deployment Limitations
+
+> **The code and implementations work perfectly on local machines but may experience issues on freely hosted websites due to limitations in processing power, storage, and RAM.**
+
+### Known Limitations on Free Hosting Tiers:
+
+1. **Memory Constraints:**
+   - Image stitching with multiple large images may fail
+   - SIFT feature extraction on high-resolution images may timeout
+   - Stereo calibration with many image pairs may exceed memory
+
+2. **Processing Time:**
+   - Complex operations may timeout (30-60 second limits)
+   - Real-time features require client-side processing
+
+3. **Storage:**
+   - Temporary files may be cleared between requests
+   - Large file uploads may be rejected
+
+4. **Recommendations for Testing:**
+   - Use smaller/fewer images for stitching operations
+   - Reduce image resolution before upload
+   - For full functionality, run locally (see Local Development Setup below)
+
+---
+
+## 📚 Modules Overview
 
 | Module | Description | Documentation |
 |--------|-------------|---------------|
@@ -41,7 +85,7 @@ computer-vision/
 
 ---
 
-## Local Development Setup
+## 🛠️ Local Development Setup
 
 ### Prerequisites
 
@@ -54,8 +98,8 @@ computer-vision/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/computer-vision.git
-   cd computer-vision
+   git clone https://github.com/Gowtham0436/ComputerVision_Gowtham.git
+   cd ComputerVision_Gowtham
    ```
 
 2. **Create and activate virtual environment:**
@@ -90,138 +134,39 @@ computer-vision/
 6. **Access the application:**
    Open `http://localhost:5000` in your browser.
 
-### Running Tests
+---
 
-```bash
-# Test individual modules
-python -c "from modules.module1.handlers import calculate_roi_dimensions; print('Module 1 OK')"
-python -c "from modules.module2.handlers import match_template_handler; print('Module 2 OK')"
-python -c "from modules.module3.handlers import detect_edges_handler; print('Module 3 OK')"
+## 📁 Project Structure
+
+```
+ComputerVision_Gowtham/
+├── app.py                    # Main Flask application
+├── requirements.txt          # Python dependencies
+├── Dockerfile                # Docker configuration for deployment
+├── railway.json              # Railway deployment config
+├── core/                     # Shared utilities
+│   ├── auth.py              # Face authentication
+│   ├── decorators.py        # Route decorators
+│   └── utils.py             # Image processing utilities
+├── modules/                  # Feature modules
+│   ├── module1/             # Object dimension measurement
+│   ├── module2/             # Template matching & Fourier transform
+│   ├── module3/             # Edge/corner detection & segmentation
+│   ├── module4/             # Image stitching & SIFT
+│   ├── module5_6/           # Motion tracking
+│   └── module7/             # Stereo vision & pose estimation
+├── static/                   # Static assets
+│   ├── js/                  # Client-side JavaScript
+│   └── outputs/             # Generated output images
+├── templates/               # HTML templates
+├── models/                  # Pre-trained models (face detection)
+├── uploads/                 # Temporary upload storage
+└── ImageDataset/            # Sample images for testing
 ```
 
 ---
 
-## Deployment Guide
-
-### Option 1: Render (Recommended)
-
-1. Create account at [render.com](https://render.com)
-2. Connect your GitHub repository
-3. Create new Web Service with these settings:
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `gunicorn wsgi:app`
-   - **Environment Variables:**
-     - `SECRET_KEY`: Generate a secure random string
-     - `FLASK_ENV`: `production`
-     - `PYTHON_VERSION`: `3.11.0`
-
-### Option 2: Railway
-
-1. Create account at [railway.app](https://railway.app)
-2. Connect GitHub repository
-3. Railway auto-detects Python and uses `railway.json` configuration
-4. Set environment variables in dashboard
-
-### Option 3: PythonAnywhere
-
-1. Create account at [pythonanywhere.com](https://pythonanywhere.com)
-2. Upload code or clone from GitHub
-3. Create virtual environment:
-   ```bash
-   mkvirtualenv --python=/usr/bin/python3.11 cvenv
-   pip install -r requirements_pythonanywhere.txt
-   ```
-4. Configure WSGI file to point to `wsgi.py`
-
-### Option 4: Docker
-
-```bash
-# Build image
-docker build -t computer-vision .
-
-# Run container
-docker run -p 5000:5000 -e SECRET_KEY=your-secret computer-vision
-```
-
-### Environment Variables for Production
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `SECRET_KEY` | Flask session encryption key | Yes |
-| `FLASK_ENV` | Set to `production` | Yes |
-| `PORT` | Server port (default: 5000) | No |
-
----
-
-## ⚠️ Important Notice: Hosted Deployment Limitations
-
-> **The code and implementations work perfectly on local machines but may experience issues on freely hosted websites due to limitations in processing power, storage, and RAM.**
-
-### Known Limitations on Free Hosting Tiers:
-
-1. **Memory Constraints:**
-   - Image stitching with multiple large images may fail
-   - SIFT feature extraction on high-resolution images may timeout
-   - Stereo calibration with many image pairs may exceed memory
-
-2. **Processing Time:**
-   - Complex operations may timeout (30-60 second limits)
-   - Real-time features require client-side processing
-
-3. **Storage:**
-   - Temporary files may be cleared between requests
-   - Large file uploads may be rejected
-
-4. **Recommendations:**
-   - Use paid tiers for production deployment
-   - Reduce image resolution before upload
-   - Process fewer images at once for stitching
-   - Run computationally intensive tasks locally
-
----
-
-## Quick Links
-
-### Live Demo
-**Publicly Accessible Website:** [https://web-production-eff5.up.railway.app](https://web-production-eff5.up.railway.app)
-
-### All Resources at a Glance
-
-| Resource | Link |
-|----------|------|
-| **Live Website** | https://web-production-eff5.up.railway.app |
-| **All Video Demos (Root Folder)** | https://drive.google.com/drive/folders/1sDuxKY6cSGA5d_JrrPNI5vKIN9wEUTt5?usp=drive_link |
-
----
-
-## Video Demonstrations
-
-All video demonstrations are organized by module in Google Drive:
-
-| Module | Description | Video Demo Link |
-|--------|-------------|-----------------|
-| **Module 1** | Object Dimension Measurement | https://drive.google.com/drive/folders/12DCsXSPZt4a09L4Dp8GqmWm7n2oCG9VD?usp=sharing |
-| **Module 2** | Template Matching & Fourier Transform | https://drive.google.com/drive/folders/1iy3I0BbV6KJRbN1B4AM7Tou4ehtyGQgp?usp=drive_link |
-| **Module 3** | Edge/Corner Detection & Segmentation | https://drive.google.com/drive/folders/1UHn1uRgJSzDtCxkuvjkzxLLVsO_vYNva?usp=drive_link |
-| **Module 4** | Image Stitching & SIFT | https://drive.google.com/drive/folders/1m13iJuZwABcr-KuIilbYmSInasvWnB1p?usp=drive_link |
-| **Module 5-6** | Motion & Object Tracking | https://drive.google.com/drive/folders/1drMoXxM1l_9q-G7sPEzHokzbKq7n-Tz1?usp=drive_link |
-| **Module 7** | Stereo Vision & Pose Estimation | https://drive.google.com/drive/folders/1lKJa6wYDAKPlGJPm28aNTb3BJQXZJwtm?usp=drive_link |
-
----
-
-## Derivation Documents
-
-Theoretical derivations and mathematical proofs (handwritten/typed documents):
-
-| Module | Problem | Derivation Document Link |
-|--------|---------|--------------------------|
-| **Module 1** | Perspective Projection Equations | https://docs.google.com/document/d/1LCS-pMZc43crUcNrvYt7jO-VWAmUCUcfcD0CZ9NHdmw/edit?usp=sharing |
-| **Module 5-6** | Lucas-Kanade Optical Flow & Affine Motion Model | https://docs.google.com/document/d/1LACvjROUFot_AqIzYj0mHj1TEeKIFW4FRhDNz9A23qw/edit?usp=sharing |
-| **Module 7** | Uncalibrated Stereo Reconstruction | https://docs.google.com/document/d/1xmeF3Ek7uIAratsi-S8-WAou9DPjP43YmSKWZ22JOH4/edit?usp=sharing |
-
----
-
-## Technology Stack
+## 🔧 Technology Stack
 
 ### Backend
 - **Flask 3.0** - Web framework
@@ -242,7 +187,20 @@ Theoretical derivations and mathematical proofs (handwritten/typed documents):
 
 ---
 
-## API Reference
+## 🚀 Deployment (Railway)
+
+This project is configured for Railway deployment:
+
+1. Create account at [railway.app](https://railway.app)
+2. Connect GitHub repository
+3. Railway auto-detects Python and uses `Dockerfile` configuration
+4. Set environment variables:
+   - `SECRET_KEY`: Generate a secure random string
+   - `FLASK_ENV`: `production`
+
+---
+
+## 📡 API Reference
 
 All modules expose RESTful APIs. See individual module READMEs for detailed endpoint documentation.
 
@@ -265,25 +223,14 @@ All modules expose RESTful APIs. See individual module READMEs for detailed endp
 
 ---
 
-## Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/new-feature`)
-3. Commit changes (`git commit -am 'Add new feature'`)
-4. Push to branch (`git push origin feature/new-feature`)
-5. Create Pull Request
-
----
-
-## License
+## 📜 License
 
 This project is developed for educational purposes as part of CSc 8830 coursework.
 
 ---
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - OpenCV community for comprehensive computer vision library
 - MediaPipe team for pose estimation models
 - Flask community for the web framework
-
