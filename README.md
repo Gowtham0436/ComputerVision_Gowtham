@@ -1,12 +1,12 @@
 # CSc 8830 Computer Vision Project
 
-## 🔗 Quick Links - All Resources
+## Quick Links - All Resources
 
 | Resource | Link |
 |----------|------|
-| **🌐 Live Website** | https://web-production-eff5.up.railway.app |
-| **📁 All Video Demos** | https://drive.google.com/drive/folders/1sDuxKY6cSGA5d_JrrPNI5vKIN9wEUTt5?usp=drive_link |
-| **📂 GitHub Repository** | https://github.com/Gowtham0436/ComputerVision_Gowtham |
+| **Live Website** | https://web-production-eff5.up.railway.app |
+| **All Video Demos** | https://drive.google.com/drive/folders/1sDuxKY6cSGA5d_JrrPNI5vKIN9wEUTt5?usp=drive_link |
+| **GitHub Repository** | https://github.com/Gowtham0436/ComputerVision_Gowtham |
 
 ---
 
@@ -14,7 +14,7 @@ A comprehensive web-based computer vision application implementing fundamental a
 
 ---
 
-## 🎥 Video Demonstrations
+## Video Demonstrations
 
 All video demonstrations are organized by module in Google Drive:
 
@@ -29,7 +29,7 @@ All video demonstrations are organized by module in Google Drive:
 
 ---
 
-## 📝 Derivation Documents
+## Derivation Documents
 
 Theoretical derivations and mathematical proofs (handwritten/typed documents):
 
@@ -41,7 +41,7 @@ Theoretical derivations and mathematical proofs (handwritten/typed documents):
 
 ---
 
-## ⚠️ Important Notice: Hosted Deployment Limitations
+## Important Notice: Hosted Deployment Limitations
 
 > **The code and implementations work perfectly on local machines but may experience issues on freely hosted websites due to limitations in processing power, storage, and RAM.**
 
@@ -67,7 +67,7 @@ Theoretical derivations and mathematical proofs (handwritten/typed documents):
 
 ---
 
-## 📚 Modules Overview
+## Modules Overview
 
 | Module | Description | Documentation |
 |--------|-------------|---------------|
@@ -80,7 +80,7 @@ Theoretical derivations and mathematical proofs (handwritten/typed documents):
 
 ---
 
-## 🛠️ Local Development Setup
+## Local Development Setup
 
 ### Prerequisites
 
@@ -131,7 +131,7 @@ Theoretical derivations and mathematical proofs (handwritten/typed documents):
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ComputerVision_Gowtham/
@@ -161,7 +161,7 @@ ComputerVision_Gowtham/
 
 ---
 
-## 🔧 Technology Stack
+## Technology Stack
 
 ### Backend
 - **Flask 3.0** - Web framework
@@ -182,7 +182,7 @@ ComputerVision_Gowtham/
 
 ---
 
-## 🚀 Deployment (Railway)
+## Deployment (Railway)
 
 This project is configured for Railway deployment:
 
@@ -195,7 +195,7 @@ This project is configured for Railway deployment:
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 All modules expose RESTful APIs. See individual module READMEs for detailed endpoint documentation.
 
@@ -218,13 +218,13 @@ All modules expose RESTful APIs. See individual module READMEs for detailed endp
 
 ---
 
-## 📜 License
+## License
 
 This project is developed for educational purposes as part of CSc 8830 coursework.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - OpenCV community for comprehensive computer vision library
 - MediaPipe team for pose estimation models
