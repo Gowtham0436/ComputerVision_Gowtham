@@ -2,6 +2,10 @@
                     CSc 8830 Computer Vision Project - Links
 ================================================================================
 
+GITHUB REPOSITORY
+--------------------------------------------------------------------------------
+https://github.com/Gowtham0436/ComputerVision_Gowtham
+
 LIVE WEBSITE
 --------------------------------------------------------------------------------
 Public URL: https://web-production-eff5.up.railway.app
