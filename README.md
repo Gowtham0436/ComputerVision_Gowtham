@@ -1,21 +1,16 @@
 # CSc 8830 Computer Vision Project
 
-A comprehensive web-based computer vision application implementing fundamental algorithms for object measurement, template matching, image processing, feature extraction, motion tracking, stereo vision, and pose estimation.
-
----
-
 ## 🔗 Quick Links - All Resources
-
-### Live Demo
-**🌐 Publicly Accessible Website:** [https://web-production-eff5.up.railway.app](https://web-production-eff5.up.railway.app)
-
-### All Resources at a Glance
 
 | Resource | Link |
 |----------|------|
 | **🌐 Live Website** | https://web-production-eff5.up.railway.app |
-| **📁 All Video Demos (Root Folder)** | https://drive.google.com/drive/folders/1sDuxKY6cSGA5d_JrrPNI5vKIN9wEUTt5?usp=drive_link |
+| **📁 All Video Demos** | https://drive.google.com/drive/folders/1sDuxKY6cSGA5d_JrrPNI5vKIN9wEUTt5?usp=drive_link |
 | **📂 GitHub Repository** | https://github.com/Gowtham0436/ComputerVision_Gowtham |
+
+---
+
+A comprehensive web-based computer vision application implementing fundamental algorithms for object measurement, template matching, image processing, feature extraction, motion tracking, stereo vision, and pose estimation.
 
 ---
 
